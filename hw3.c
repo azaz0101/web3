@@ -109,6 +109,8 @@ void dump_ip(u_int32_t length, const u_char *content){
 	}
 	else if (protocol == IPPROTO_ICMP)
 		printf("Protocol : ICMP\n");
+	else if (protocol == 89)
+		printf("Protocol : OSPF\n");
 	else 
 		printf("Protocol : %d\n",protocol);
 }
